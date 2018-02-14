@@ -8,7 +8,7 @@ footer * {
 header {
 	display: block;
 	position: relative;
-	top: 20px;
+	margin-top: 14px;
 	width: 100%;
 }
 
@@ -180,26 +180,39 @@ input:focus {
 }
 
 .searchButton {
+	background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
 	background-color: #f2f2f2;
 	border: 1px solid #f2f2f2;
-	border-radius: 2px;
-	margin: 11px 4px;
-	padding: 0 16px;
-	min-width: 54px;
+	-webkit-border-radius: 2px;
+    border-radius: 2px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    min-width: 54px;
 	height: 36px;
-	color: #757575;
+    color: #757575;
+    cursor: default;
 	font-family: Arial, sans-serif;
-	font-weight: bold;
-	text-align: center;
-	line-height: 27px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.searchButton:hover {
+	background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	color: #222;
 }
 
 footer {
 	display: block;
 	position: absolute;
-	bottom: 30px;
+	bottom: 0;
 	width: 100%;
 	background: rgb(242, 242, 242);
+	overflow: none;
 }
 
 footer, footer ul, footer li  {
@@ -208,7 +221,6 @@ footer, footer ul, footer li  {
 
 footer ul {
 	position: absolute;
-	margin-bottom: 7px;
 }
 
 footer li {
